@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h2>Registro de Productos</h2>
+            <form>
+                <div class="form-group">
+                    <label>Codigo</label>
+                    <input type="text" name="codigoProducto" [(ngModel)]="producto.codigoProducto "
+                    class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Nombre</label>
+                    <input type="text" name="nombreProducto" [(ngModel)]="producto.nombreProducto"
+                        class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Costo</label>
+                    <input type="number" name="costoProducto" [(ngModel)]="producto.costoProducto"
+                        class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Presentacion</label>
+                    <input type="text" name="presentacionProducto" [(ngModel)]="producto.presentacionProducto"
+                        class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Gramos</label>
+                    <input type="number" name="gramos" [(ngModel)]="producto.gramos" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Estado</label>
+                    <input type="text" name="estadoProducto" [(ngModel)]="producto.estadoProducto" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Categoria</label>
+                    <input type="text" name="categoriaProducto" [(ngModel)]="producto.categoriaProducto" class="form-control" />
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary mr-1" (click)="add()">Register</button>
+                    <button class="btn btn-secondary" type="reset">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

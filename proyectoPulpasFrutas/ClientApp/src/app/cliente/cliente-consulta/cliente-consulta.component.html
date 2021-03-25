@@ -1,0 +1,24 @@
+<table class="table table-striped" *ngIf='personas && personas.length'>
+    <thead>
+    <tr>
+    <th scope="col">#</th>
+    <th scope="col">identificación</th>
+    <th scope="col">Nombre </th>
+    <th scope="col">Apellido</th>
+    <th scope="col">E_mail</th>
+    <th scope="col">Direccion</th>
+    <th scope="col">Telefono</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let persona of personas; index as i ">
+    <th scope="row">{{ i + 1 }}</th>
+    <td>{{ persona.identificacion }} </td>
+    <td>{{ persona.nombreCliente }}</td>
+    <td>{{persona.apellidoCliente}}</td>
+    <td>{{ persona.E_mailCliente }}</td>
+    <td>{{ persona.direccionCliente}}</td>
+    <td>{{ persona.telefonoCliente}}</td>
+    </tr>
+    </tbody>
+    </table>

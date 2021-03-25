@@ -1,0 +1,26 @@
+<table class="table table-striped" *ngIf='productos && productos.length'>
+    <thead>
+    <tr>
+    <th scope="col">#</th>
+    <th scope="col">Codigo</th>
+    <th scope="col">Nombre </th>
+    <th scope="col">Costo</th>
+    <th scope="col">Presentacion</th>
+    <th scope="col">Gramos</th>
+    <th scope="col">Estado</th>
+    <th scope="col">Categoria</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let producto of productos; index as i ">
+    <th scope="row">{{ i + 1 }}</th>
+    <td>{{ producto.codigoProducto }} </td>
+    <td>{{ producto.nombreProducto }}</td>
+    <td>{{producto.costoProducto }}</td>
+    <td>{{ producto.presentacionProducto }}</td>
+    <td>{{ producto.gramos }}</td>
+    <td>{{ producto.estadoProducto }}</td>
+    <td>{{ producto.categoriaProducto }}</td>
+    </tr>
+    </tbody>
+    </table>
